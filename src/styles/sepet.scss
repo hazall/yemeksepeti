@@ -1,0 +1,37 @@
+$color-white: #fff;
+$primary-color: #AB0012;
+$bg: black;
+$color-yellow : #F5D66F;
+$primary:#48912A; 
+
+.sepet {
+    margin-right: 10px;
+    top: 100px;
+    left: 10%;
+    &__total{
+      display: flex;
+      padding:10px
+    }
+    &__area{
+      display: flex;
+      margin-top:77px
+    }
+    &__text {
+      font-weight: bold;
+      padding: 10px;
+      text-transform: uppercase;
+      color: $color-white;
+      font-size: 12px;
+      background: $primary-color;
+    }
+    &__adres {
+      background: $color-yellow;
+      padding: 10px;
+      font-size: 13px;
+      color: #ff6508;
+      text-decoration: underline;
+      font-weight: 700;
+  
+    }
+    
+  }

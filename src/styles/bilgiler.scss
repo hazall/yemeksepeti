@@ -1,0 +1,80 @@
+.bilgiler{
+    display: grid;
+    font-size: 11px;
+  
+    &__gonderim {
+  
+      text-decoration: none;
+      padding: 0;
+      margin: 3px 0 7px 2px;
+      display: inline-block;
+      font-weight: 700;
+      margin-left: 0px;
+      font-size: 12px;
+      color: #949494!important;
+  
+      &__minTutar {
+        width: 153px;
+      }
+  
+      &__price {
+        font-size: 10px;
+        font-weight: 700!important;
+        color: #E73D28;
+        text-decoration: underline;
+  
+      }
+      &__buton {
+        width: 20px;
+        height: 20px;
+        display: grid;
+        i{
+          margin: auto;
+          font-size: 11px;
+        }
+      }
+      &__popup{
+        display: flex;
+        background: white;
+        margin: 4px;
+        padding: 5px;
+      }
+      &__span{
+        margin-right: 7px;
+        color: black;
+        font-size: 11px;
+        text-align: right;
+        width: 30%;
+      }
+      &__area{
+        width: 70%;
+        float: right;
+        a {
+          display: grid;
+          color: #FF6508!important;
+          text-decoration: underline!important;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    &__delivery {
+      margin-top: 10px;
+      color: #333;
+    }
+  }
+
+.workingHours {
+    display: grid;
+    background: white;
+    padding: 10px;
+    border-bottom: 1px solid #eff0f2;
+  
+    &__days{
+      font-size: 11px;display: grid;font-weight: 700;
+    }
+    &__hours{
+      color: #E73D28!important;
+      font-weight: 700!important;
+      font-size: 12px;
+    }
+  }

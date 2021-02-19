@@ -1,0 +1,198 @@
+.restaurant {
+    background: url(../assets/images/burger.png)  no-repeat;
+    background-size: cover;
+    height: 153px;
+    display: flex;
+  
+    &__area {
+      padding-left: 21px;
+      margin-top: 24px;
+    }
+  
+    &__logo{
+      width: 86px;
+      background: url(../assets/images/rest-logo.png) no-repeat;
+      height: 61px;
+      margin: auto;
+  
+    }
+  
+    &__name {
+      margin: auto;
+      padding-left: 0px;
+      span {
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  
+    &__super {
+      margin-right: 5px;
+    }
+  
+    &__detail {
+     display: flex;
+     margin-top: 12px;
+  
+     &__titles{
+      list-style-type: square;
+      padding-left: 10px;
+      margin-top: 30px;
+     }
+  
+     &__title {
+      padding: 0 0 5px 20px;
+      background-color: #f7f7f8;
+      color: #ff6508;
+      font-weight: 600;
+      margin-top: 0;
+      font-size: 16px;
+      height: 54px;
+      line-height: 54px;
+     }
+  
+     &__card {
+      font-size: 12px;
+      display: flex;
+      margin: 15px;
+      i {
+        margin-right: 5px;
+        margin-bottom: auto;
+        margin-top: auto;
+        color: gray;
+      }
+     }
+  
+     &__list {
+      color: #ff7208;
+      line-height: 22px;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 700;
+      display: list-item;
+     }
+     &__list:hover{
+      color: #ff7208;
+     }
+    }
+  
+    &__points {
+      border-radius: 2px;
+      font-weight: 600;
+      color: white;
+      width: 41px;
+      background: #ABC44C;
+      height: 46px;
+      margin-right: 5px;
+      display: grid;
+      span {
+        margin: auto;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      &__point {
+        font-size: 16px!important;
+      }
+    }
+  
+    &__delivery{
+      margin-left: 26px;
+      display: grid;
+      span {
+        font-weight: 400;
+        line-height: 14px;
+        font-size: 10px;
+      }
+      &__minTutar{
+        margin-bottom: 4px;
+        width: 16px;
+        height: 13px;
+        background: url(../assets/images/min-tutar.png) no-repeat;
+      }
+      &__price {
+        font-weight: 700!important;
+        font-size: 12px;
+        &.color {
+          color: #E73D28!important;
+        }
+      }
+      &__time {
+        background: url(../assets/images/motor.png) no-repeat;
+        width: 19px;
+        height: 13px;
+        margin-bottom: 4px;
+  
+      }
+      &__day {
+        font-size: 11px;
+        display: grid;
+        font-weight: 700;
+      }
+    }
+  
+    &__menu {
+      margin-top: 20px;
+      &__title {
+        background: rgba(239, 239, 239, 0.0001);
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        border-radius: 2px 2px 0px 0px;
+        &__name {
+          font-size: 16px;
+          margin: auto;
+          padding: 15px;
+        }
+      }
+      &__card{
+        vertical-align: middle;
+        display: flex;
+        padding: 10px;
+        background: rgba(239, 239, 239, 0.0001);
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        &__svg {
+          background: url(../assets/images/add.svg) no-repeat center;
+          width: 30px;
+          background-color: #48912A;
+          height: 20px;
+          margin-right: 10px;
+        }
+        &__input {
+          background: #FFFFFF;
+          border: 1px solid #DCDCDC;
+          box-sizing: border-box;
+          box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.258823);
+          border-radius: 2px;
+          margin-right: 5px;
+          width: 24px;
+          height: 20px;      
+          padding: 0px;
+          text-align: center;
+          font-size: 11px;
+        }
+        &__dinner {
+          font-weight: 700;
+          font-style: normal;
+          font-size: 11px;
+          line-height: 15px;
+          color: #FF6508;
+          font-size: 11px;
+          margin-top: 2px;    
+          span {
+            float: right;
+            margin-right: 15px;
+          }    
+        }
+  
+        &__detail {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 16px;
+          color: #333333;
+          margin-top: 4px;      
+        }
+      }
+    }
+  
+  }

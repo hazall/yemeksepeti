@@ -1,0 +1,38 @@
+@import '~bootstrap/scss/bootstrap';
+@import 'common.scss';
+@import 'sepet.scss';
+@import 'restaurant.scss';
+@import 'bilgiler.scss';
+@import 'cart.scss';
+
+$primary-color: #AB0012;
+$bg: black;
+$color-white: #fff;
+$color-yellow : #F5D66F;
+$primary:#48912A; 
+.navbar {
+  background-color: $primary-color;
+  height: 84px;
+}
+.logo{
+  width: 214px;
+  height: 42px;
+}
+.container{
+  margin-top: 20px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.row{
+  margin-top:20px;
+}

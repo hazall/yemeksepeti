@@ -1,0 +1,106 @@
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+      visibility: hidden;
+      width: 260px;
+      background-color: #eff0f2;
+      /* color: #fff; */
+      /* text-align: center; */
+      border-radius: 6px;
+      padding: 8px 0;
+      position: absolute;
+      z-index: 1;
+      top: -3%;
+      left: -120px;
+  }
+  .working {
+      width: 164px!important;
+      padding: 10px;
+  
+  }
+  
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 3%;
+    left: 52%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  .popup .working::after {
+      top: 2%;
+      left: 73%!important;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    padding: 5px;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  .tab {
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border-bottom: 1px solid #e5e5e5!important;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+      border: 1px solid #e5e5e5;
+      border-top-right-radius: 3px;
+      border-bottom: none!important;
+      border-top-left-radius: 3px;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+      border-top-right-radius: 3px;
+      border: 1px solid #e5e5e5;
+      border-bottom: none!important;
+      border-top-left-radius: 3px;
+      color: #ff6508;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
