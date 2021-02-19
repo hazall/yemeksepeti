@@ -12,7 +12,7 @@ var orderCart = (function() {
   function Order (name, price, count) {
     this.name = name;
     this.price = price;
-    this.count = 1;
+    this.count = count;
   }
   function saveCart() {
     sessionStorage.setItem('orders', JSON.stringify(cart));
