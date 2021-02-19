@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+    <meta charset="utf-8" />
+    <title>YemekSepeti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="/styles.2d35182654fc9441560c.css" rel="stylesheet"></head>
+   <body>
+    <div class="navbar fixed-top">
+            <div class="container">
+                <div >
+                    <img src="/images/1afd524d1b1729177f1d7dc0251b8a36.png" />
+                </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="col-sm-12 sepet__area">
+            <div class="col-md-2 sepet fixed-top">  
+                <div class="sepet__text">Yemek Sepetİm
+                </div>
+                <div id="cart-sepet" style="display: none;">
+                    <div class="sepet__adres" id="sepet-adres"></div>
+                    <div>
+                        <div class="cart show-cart">
+                        </div>
+                        <div class="cart col-md-12 sepet__total">
+                            <div class="col-md-4 cart__toplam">
+                                Toplam
+                            </div> 
+                            <div class="col-md-8 total-cart cart__totalPrice"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cart-empty">
+                    <div class="sepet__adres" id="sepet-adresEmpty"></div>
+                    <div>
+                        <div class="cart col-md-12 cart__empty__area">
+                            <div class="col-md-4 cart__empty">
+                                <img src="/images/ba7ead5db73db64d44f046c674fdf168.png" />
+                            </div> 
+                            <div class="col-md-8 total-cart cart__empty__text">Sepetiniz Henüz Boş</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-10 offset-sm-2 restaurant__area">
+                <div class="restaurant">
+                    <div class="restaurant__logo">
+                    </div>
+                    <div class="col-md-10 restaurant__name">
+                        <div id="restaurant__name"></div>
+                        <div class="restaurant__detail">
+                            <div class="restaurant__super">
+                                <img src="/images/122677b50e8646a9263999fa08644cab.png" />
+                            </div>
+                            <div id="point-data" style="display: flex;"> 
+                            </div>
+                            <div class="restaurant__delivery">
+                                <div class="restaurant__delivery__minTutar"></div>
+                                <span>
+                                    Min. Tutar
+                                </span>
+                                <span id="min-tutar" class="restaurant__delivery__price"></span>
+                            </div>
+                            <div class="restaurant__delivery">
+                                <div class="restaurant__delivery__time"></div>
+                                <span>
+                                    Servis Süresi
+                                </span>
+                                <span id="time" class="restaurant__delivery__price"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'Title')">Başlıklar</button>
+                    <button class="tablinks" onclick="openTab(event, 'Menu')">Menu</button>
+                    <button class="tablinks" onclick="openTab(event, 'Bilgiler')">Bilgiler</button>
+                  </div>
+                  
+                  <div id="Title" class="tabcontent">
+                    <ul class="restaurant__detail__titles" id="listTitle">
+                    </ul>
+                  </div>
+                  
+                  <div id="Menu" class="tabcontent">
+                    <div id="menu-card" class="restaurant__menu">
+                    </div>
+                  </div>
+                  
+                  <div id="Bilgiler" class="tabcontent">
+                    <div class="row">
+                        <div class="col-md-4 bilgiler">
+                            <span class="bilgiler__gonderim">Gönderim Bölgeleri
+                                <div class="popup"  onclick="popUp('gonderimPopup')" >
+                                    <button class="btn btn-sm btn-light bilgiler__gonderim__buton"><i class="fa fa-caret-down"></i></button>
+                                 <span class="popuptext" id="gonderimPopup">Gönderim Bölgeleri
+                                    <div class="">
+                                        <div>
+                                            <span>Tüm Kampüsler</span>
+                                            <div id="kampus">
+        
+                                            </div>
+                                        </div>
+                                     </div>
+                                 </span>
+                                 
+                                </div>
+                            </span>
+                            
+                            
+                            <div class="bilgiler__gonderim__minTutar">
+                                <span style="display: grid;">
+                                    Min. Tutar
+                                </span>
+                                <span id="min-tutar-gonderim" class="restaurant__delivery__price"></span> : 
+                                <span id="area-gonderim" class="bilgiler__gonderim__price"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="bilgiler__gonderim">Çalışma Saatleri
+                                <div class="popup"  onclick="popUp('workingPopup')" >
+                                    <button class="btn btn-sm btn-light bilgiler__gonderim__buton"><i class="fa fa-caret-down"></i></button>
+                                 <span class="popuptext working" id="workingPopup">
+                                    <div class="">
+                                        <div>
+                                            <span>Çalışma Saatleri</span>
+                                            <div id="workingHours">
+        
+                                            </div>
+                                        </div>
+                                     </div>
+                                 </span>
+                                 
+                                </div>
+                            </span>
+                            
+                            
+                            <div>
+                                <span id="dayOfWeek"  class="restaurant__delivery__day">
+                                    
+                                </span>
+                                <span id="hourOfDay" class="restaurant__delivery__price color"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="bilgiler__gonderim">Servis Süresi :
+                                <div class="bilgiler__delivery">
+                                    <span id="deliverTime">
+                                       
+                                    </span>
+                                
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="restaurant__menu">
+                        <div style="margin-bottom:20px">
+                            <div class="restaurant__menu__title">
+                            <h2 class="restaurant__detail__title">Promosyonlar</h2>
+                            <div id="restoran-detail">
+                                
+                            </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="restaurant__menu">
+                        <div style="margin-bottom:20px">
+                            <div class="restaurant__menu__title">
+                            <h2  class="restaurant__detail__title">Ödeme Şekilleri</h2>
+                            <div id="restoran-payment">
+                                
+                            </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+    </div>
+   <script type="text/javascript" src="/bundle.js"></script></body>
+ </html>
