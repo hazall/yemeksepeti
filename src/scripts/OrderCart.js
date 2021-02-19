@@ -39,7 +39,7 @@ var orderCart = (function() {
         return;
       }
     }
-    var item = new Order(name, price, count);
+    var item = new Order(name, price, Number(count));
     cart.push(item);
     saveCart();
   };
@@ -115,7 +115,7 @@ var orderCart = (function() {
   orderObject.addCart = function (item) {
     var name = item.dataset.name;
     var price = item.dataset.price;
-    var count = item.previousElementSibling.value;
+    var count = Number(item.previousElementSibling.value);
     orderObject.addItemToCart(name, price, count);
     cartSepet.style.display = "grid";
     sepetAdres.innerHTML = restaurantName.innerHTML;
